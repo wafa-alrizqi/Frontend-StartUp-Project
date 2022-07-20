@@ -7,6 +7,8 @@ import EmSignup from "./components/EmSignup";
 import Nav from "./components/Nav"
 import Contact from "./components/Contact";
 import {HashLink as Link} from "react-router-hash-link"
+import AddJob from "./components/AddJob";
+import EmNav from "./components/EmNav";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/EmSignup" exact element={<EmSignup />}></Route>
           <Route path="/Nav" exact element={<Nav />}></Route>
           <Route path="/Contact" exact element={<Contact />}></Route>
+          <Route path="/AddJob" exact element={<AddJob />}></Route>
+          <Route path="/EmNav" exact element={<EmNav />}></Route>
         </Routes>
       </Router>
     </>

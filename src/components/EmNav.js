@@ -3,21 +3,25 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/style.css";
 import "../css/bootstrap.min.css.map";
 import "../css/bootstrap.min.css";
-import logo from '../images/logo.png';
+import logo from "../images/logo.png";
+import { useNavigate } from "react-router-dom";
 
-
-export default function Nav() {
+export default function EmNav() {
+  const navigate = useNavigate();
   document.title = "Start Up";
+
+  const logout = () => {
+    localStorage.removeItem("id");
+    localStorage.removeItem("username");
+    navigate("/");
+  };
+
   return (
     <div>
       <header role="banner">
         <nav className="navbar navbar-expand-md navbar-dark bg-dark">
           <div className="container">
-            <img
-              src={logo}
-              alt="logo"
-              style={{ width: 50 }}
-            />
+            <img src={logo} alt="logo" style={{ width: 50 }} />
             <a className="navbar-brand" href="/" style={{ color: `#2b089f` }}>
               Start Up
             </a>
@@ -53,8 +57,20 @@ export default function Nav() {
 
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item cta-btn">
-                  <a className="nav-link" href=" " >
+                  <a
+                    className="nav-link"
+                    href=" "
+                    style={{ fontSize: `15px` }}
+                  >
                     Contact Us
+                  </a>
+                </li>
+                <li className="nav-item cta-btn" style={{ marginLeft: 20 }}>
+                  <a className="nav-link" href=" " onClick={logout} >
+                    <i
+                      className="bi bi-box-arrow-right fa-5x"
+                      style={{ fontSize: `15px` }}
+                    ></i>
                   </a>
                 </li>
               </ul>
