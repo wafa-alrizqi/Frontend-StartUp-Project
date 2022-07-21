@@ -6,6 +6,8 @@ import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Nav from "./Nav";
 
 export default function AddJob() {
+  document.title='Start Up | Post New Job'
+
   const navigate = useNavigate();
   const [title, setTitle] = useState();
   const [requirements, setRrequirements] = useState();

@@ -4,6 +4,7 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import SectionImg from "./SectionImg";
 function Explore() {
+  document.title='Start Up | Explore'
   return (
     <>
       <Nav />

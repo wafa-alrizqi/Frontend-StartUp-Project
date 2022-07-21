@@ -8,6 +8,7 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 
 function Contact() {
+  document.title='Start Up | Contact Us'
   return (
     <div>
       <Nav></Nav>

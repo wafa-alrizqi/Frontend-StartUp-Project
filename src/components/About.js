@@ -2,6 +2,8 @@ import React from "react";
 import Nav from "./Nav";
 import Footer from "./Footer";
 export default function About() {
+  document.title='Start Up | About'
+
   return (
     <>
     <Nav />
