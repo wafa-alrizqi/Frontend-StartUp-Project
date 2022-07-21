@@ -44,7 +44,7 @@ export default function Nav() {
                   </a>
                 </li> */}
                 <li className="nav-item">
-                  <a className="nav-link" href="/About">
+                  <a className="nav-link" href="/About" >
                     About
                   </a>
                 </li>

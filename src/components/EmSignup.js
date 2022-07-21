@@ -102,9 +102,9 @@ export default function EmSignup() {
                   <div className="col-lg-6 d-flex align-items-center gradient-custom-2">
                     <div className="text-white px-3 py-4 p-md-1 mx-md-4">
                       <h4 className="mb-4" style={{ color: "rgb(0,0,0)" }}>
-                        Are You Looking For A Job?{" "}
+                        Are You Looking For Tech Jobs?
                       </h4>{" "}
-                      <hr  style={{height: '5px',background: 'black'}}/>
+                      <hr style={{ height: "5px", background: "black" }} />
                       <h5
                         className="mb-3"
                         style={{ color: "white", fontWeight: "bold" }}
@@ -112,17 +112,17 @@ export default function EmSignup() {
                         <div className="center">Start Up is Here For You</div>
                         <br /> <br />
                         Finding your next position could be easier if you know
-                        where to look !.
+                        where to look !
                         <br /> <br />
                         <br /> <br />
                         <div className="center">
-                        <a href="/Explore">
-                          <button
-                            type="button"
-                            className="center btn btn-outline-light btn-lg"
-                          >
-                            Find Now
-                          </button>
+                          <a href="/Explore">
+                            <button
+                              type="button"
+                              className="center btn btn-outline-light btn-lg"
+                            >
+                              Explore Now
+                            </button>
                           </a>
                         </div>
                       </h5>
@@ -140,13 +140,20 @@ export default function EmSignup() {
                               style={{ width: 185 }}
                             />
                           </div>
-                          <h4 className="col p-2 m-6" style={{fontWeight:'700'}}>Start Up</h4>
+                          <h4
+                            className="col p-2 m-6"
+                            style={{ fontWeight: "700" }}
+                          >
+                            Start Up
+                          </h4>
                         </div>
                       </div>
                       <form>
                         <p>
                           <br />
-                          <b style={{ color: "black" , fontWeight:'800'}}>Sign Up</b>
+                          <b style={{ color: "black", fontWeight: "800" }}>
+                            Sign Up
+                          </b>
                         </p>
                         <br />
                         <div className="form-outline mb-4">
@@ -203,7 +210,6 @@ export default function EmSignup() {
                             value="Sign up"
                             onClick={signup}
                           />
-                          
 
                           <br></br>
                         </div>
@@ -212,7 +218,9 @@ export default function EmSignup() {
                           <p className="mb-0 me-2" style={{ color: "black" }}>
                             Already have an account?
                           </p>
-                          <a href="/" style={{transition: 'all 0.2s linear'}}>Sign in</a>
+                          <a href="/" style={{ transition: "all 0.2s linear" }}>
+                            Sign in
+                          </a>
                         </div>
                       </form>
                     </div>

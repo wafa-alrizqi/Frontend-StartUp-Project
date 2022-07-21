@@ -109,7 +109,7 @@ export default function Login() {
                   <div className="col-lg-6 d-flex align-items-center gradient-custom-2">
                     <div className="text-white px-3 py-4 p-md-1 mx-md-4">
                       <h4 className="mb-4" style={{ color: "rgb(0,0,0)" }}>
-                        Are You Looking For A Job?{" "}
+                      Are You Looking For Tech Jobs?
                       </h4>{" "}
                       <hr  style={{height: '5px',background: 'black'}}/>
                       <h5
@@ -119,7 +119,7 @@ export default function Login() {
                         <div className="center">Start Up is Here For You</div>
                         <br /> <br />
                         Finding your next position could be easier if you know
-                        where to look !.
+                        where to look !
                         <br /> <br />
                         <br /> <br />
                         <div className="center">
@@ -128,7 +128,7 @@ export default function Login() {
                             type="button"
                             className="center btn btn-outline-light btn-lg"
                           >
-                            Find Now
+                            Explore Now
                           </button>
                           </a>
                         </div>

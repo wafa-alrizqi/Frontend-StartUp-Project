@@ -28,8 +28,8 @@ body.offcanvas-menu:before {
 }
 
 p {
-  color: #2b089f;
-  font-weight: 300;
+  /* color: #2b089f; */
+  font-size: medium;
 }
 
 h1,
@@ -54,10 +54,12 @@ a {
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
-a,
+
 a:hover {
   text-decoration: none !important;
+  font-size: large ;
 }
+
 
 .hero {
   height: 10vh;
@@ -119,10 +121,12 @@ header .navbar {
 header .navbar .nav-link {
   padding: 1.1rem 1rem;
   outline: none !important;
-  font-size: 1rem;
+  font-size: large;
   font-weight: bolder;
   color: #2b089f !important;
 }
+
+
 @media (max-width: 1199.98px) {
   header .navbar .nav-link {
     padding: 0.5rem 0rem;
@@ -131,6 +135,7 @@ header .navbar .nav-link {
 header .navbar .nav-link.active {
   color: #2b089f !important;
 }
+
 
 header .navbar .cta-btn a  {
   background: #2b089f;
@@ -182,6 +187,7 @@ header .navbar .cta-btn a:hover {
   padding-left: 5%;
   line-height: 1.5;
   font-size: xx-large;
+  text-transform: capitalize;
 } 
 .containerAbout{
   text-align: left;
