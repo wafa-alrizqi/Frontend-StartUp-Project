@@ -9,6 +9,8 @@ import Contact from "./components/Contact";
 import {HashLink as Link} from "react-router-hash-link"
 import AddJob from "./components/AddJob";
 import EmNav from "./components/EmNav";
+import Explore from "./components/Explore";
+import About from "./components/About";
 
 function App() {
   return (
@@ -23,6 +25,9 @@ function App() {
           <Route path="/Contact" exact element={<Contact />}></Route>
           <Route path="/AddJob" exact element={<AddJob />}></Route>
           <Route path="/EmNav" exact element={<EmNav />}></Route>
+          <Route path="/Explore" exact element={<Explore />}></Route>
+          <Route path="/About" exact element={<About />}></Route>
+
         </Routes>
       </Router>
     </>

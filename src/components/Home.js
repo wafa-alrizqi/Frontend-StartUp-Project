@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Cards from "./Cards";
 import EmNav from "./EmNav";
+import Footer from "./Footer";
 
 
 
@@ -50,6 +51,7 @@ function Home() {
         ))}
       </ul> */}
       <section className="section-card"> {CardDetails} </section>
+      <Footer />
     </div>
   );
 }

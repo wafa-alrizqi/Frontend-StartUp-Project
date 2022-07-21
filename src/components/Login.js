@@ -5,9 +5,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Nav from "./Nav";
 import Footer from "./Footer";
 import Contact from "./Contact";
-import {HashLink as Linkk} from "react-router-hash-link"
+import About from "./About";
 
 export default function Login() {
+  document.title='Start Up | Login'
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -110,7 +111,7 @@ export default function Login() {
                       <h4 className="mb-4" style={{ color: "rgb(0,0,0)" }}>
                         Are You Looking For A Job?{" "}
                       </h4>{" "}
-                      <hr />
+                      <hr  style={{height: '5px',background: 'black'}}/>
                       <h5
                         className="mb-3"
                         style={{ color: "white", fontWeight: "bold" }}
@@ -122,12 +123,14 @@ export default function Login() {
                         <br /> <br />
                         <br /> <br />
                         <div className="center">
+                          <a href="/Explore">
                           <button
                             type="button"
                             className="center btn btn-outline-light btn-lg"
                           >
                             Find Now
                           </button>
+                          </a>
                         </div>
                       </h5>
                     </div>
@@ -138,11 +141,7 @@ export default function Login() {
           </div>
         </div>
       </section>
-      <Contact id="contact" />
-      <br></br>      <br></br>
-      <br></br>
-
-      <Footer />
+      <About />
+      <Contact />
     </>
-  );
-}
+  )}

@@ -7,7 +7,6 @@ import logo from '../images/logo.png';
 
 
 export default function Nav() {
-  document.title = "Start Up";
   return (
     <div>
       <header role="banner">
@@ -35,7 +34,7 @@ export default function Nav() {
 
             <div className="collapse navbar-collapse" id="navbarsExample05">
               <ul className="navbar-nav  pl-lg-5 pl-0">
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <a
                     className="nav-link active"
                     href="/Home"
@@ -43,17 +42,22 @@ export default function Nav() {
                   >
                     Home
                   </a>
+                </li> */}
+                <li className="nav-item">
+                  <a className="nav-link" href="/About">
+                    About
+                  </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href=" ">
-                    About
+                  <a className="nav-link" href="/Explore">
+                    Explore
                   </a>
                 </li>
               </ul>
 
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item cta-btn">
-                  <a className="nav-link" href=" " >
+                  <a className="nav-link" href="/Contact" >
                     Contact Us
                   </a>
                 </li>

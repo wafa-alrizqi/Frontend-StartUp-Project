@@ -4,6 +4,7 @@ import "../css/style.css";
 import "../css/bootstrap.min.css.map";
 import "../css/bootstrap.min.css";
 import logo from "../images/logo.png";
+import Footer from "./Footer";
 import { useNavigate } from "react-router-dom";
 
 export default function EmNav() {
@@ -53,13 +54,18 @@ export default function EmNav() {
                     About
                   </a>
                 </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/Explore">
+                    Explore
+                  </a>
+                </li>
               </ul>
 
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item cta-btn">
                   <a
                     className="nav-link"
-                    href=" "
+                    href="/Contact"
                     style={{ fontSize: `15px` }}
                   >
                     Contact Us
